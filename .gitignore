@@ -1,0 +1,4 @@
+node_modules/*
+*.DS_STORE
+*.localized
+homepage-config.json
