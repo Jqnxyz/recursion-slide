@@ -18,7 +18,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 443
+EXPOSE 8443
 
 # Start server
 CMD [ "node", "index.js" ]
