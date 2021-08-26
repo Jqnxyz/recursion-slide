@@ -1,6 +1,8 @@
 # Local-Homepage
 Dockerized basic web homepage for local network server
 
+[![Node JS CI](https://github.com/jqnxyz/local-homepage/workflows/Node.js%20CI/badge.svg)]()
+
 ## What is this?
 A small lightweight(?) webserver meant to act as a directory of my local home services.
 
