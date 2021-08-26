@@ -12,6 +12,9 @@ const app = express();
 const router = express.Router();
 const path = require("path");
 
+// Hide x-powered-by
+app.disable('x-powered-by');
+
 // View Engine
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "web/pug_views"));
