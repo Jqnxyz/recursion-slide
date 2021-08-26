@@ -1,6 +1,9 @@
 # Local-Homepage
 Dockerized basic web homepage for local network server
 
+## What is this?
+A small lightweight(?) webserver meant to act as a directory of my local home services.
+
 ## Development
 ### Run
 ```bash
