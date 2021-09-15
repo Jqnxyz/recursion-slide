@@ -7,4 +7,4 @@ services:
       - .:/usr/app/
       - /usr/app/node_modules
     ports:
-      - "3443:8443"
+      - "5443:8443"

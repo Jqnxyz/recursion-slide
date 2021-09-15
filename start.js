@@ -8,23 +8,23 @@
 const fs = require('fs');
 const util = require('util');
 const configLoader = require('./config_loader');
-configLoader.setFile('homepage-config.json');
-const homepageConfig = configLoader.getConfig();
+configLoader.setFile('recursion-config.json');
+const recursionConfig = configLoader.getConfig();
 
 console.log("---");
 console.log("Using config:");
-console.log(util.inspect(homepageConfig, {
+console.log(util.inspect(recursionConfig, {
 	'colors': true
 }));
 console.log("---");
 
 // Set settings
-const insecureServer = homepageConfig['insecureWebserver'];
-const secureServer = homepageConfig['secureWebserver'];
-const httpPort = parseInt(homepageConfig['httpPort']);
-const httpsPort = parseInt(homepageConfig['httpsPort']);
-const privateCertificateLocation = homepageConfig['private_key'];
-const publicCertificateLocation = homepageConfig['public_certs'];
+const insecureServer = recursionConfig['insecureWebserver'];
+const secureServer = recursionConfig['secureWebserver'];
+const httpPort = parseInt(recursionConfig['httpPort']);
+const httpsPort = parseInt(recursionConfig['httpsPort']);
+const privateCertificateLocation = recursionConfig['private_key'];
+const publicCertificateLocation = recursionConfig['public_certs'];
 
 
 // Https BS

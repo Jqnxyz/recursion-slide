@@ -5,11 +5,11 @@
 const util = require('util')
 // Config
 const configLoader = require('./config_loader.js');
-configLoader.setFile('homepage-config.json');
-const homepageConfig = configLoader.getConfig();
+configLoader.setFile('recursion-config.json');
+const recursionConfig = configLoader.getConfig();
 
 // Date tools
-const hrOffset = parseInt(homepageConfig['utcOffset']);
+const hrOffset = parseInt(recursionConfig['utcOffset']);
 const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
@@ -50,8 +50,8 @@ function logObject(objectLog) {
 }
 
 function logRequest(req) {
-	if (homepageConfig['logRequestBasic']) console.log("Request to " + req.url + " at " + getDateString() + ", " + getTimeString());
-	if (homepageConfig['logRequestDetail']) {
+	if (recursionConfig['logRequestBasic']) console.log("Request to " + req.url + " at " + getDateString() + ", " + getTimeString());
+	if (recursionConfig['logRequestDetail']) {
 		console.log("---REQUEST START---");
 		logObject(req);
 		console.log("---REQUEST END---");

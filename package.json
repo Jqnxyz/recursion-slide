@@ -1,5 +1,5 @@
 {
-  "name": "local-homepage",
+  "name": "recursion-slide",
   "version": "1.0.1",
   "description": "Homeserver webpage",
   "main": "start.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jqnxyz/local-homepage.git"
+    "url": "git+https://github.com/Jqnxyz/recursion-slide.git"
   },
   "author": "Zen Quah",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/Jqnxyz/local-homepage/issues"
+    "url": "https://github.com/Jqnxyz/recursion-slide/issues"
   },
-  "homepage": "https://github.com/Jqnxyz/local-homepage#readme",
+  "homepage": "https://github.com/Jqnxyz/recursion-slide#readme",
   "dependencies": {
     "express": "^4.17.1",
     "pug": "^3.0.2"

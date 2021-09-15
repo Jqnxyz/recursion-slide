@@ -3,10 +3,10 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 const configLoader = require('./config_loader');
-configLoader.setFile('homepage-config.json');
-const homepageConfig = configLoader.getConfig();
+configLoader.setFile('recursion-config.json');
+const recursionConfig = configLoader.getConfig();
 
-function renderBasic(ver, req, res, opt = {domain: homepageConfig['domain']}) {
+function renderBasic(ver, req, res, opt = {domain: recursionConfig['domain']}) {
     res.render(ver, opt);
 }
 
